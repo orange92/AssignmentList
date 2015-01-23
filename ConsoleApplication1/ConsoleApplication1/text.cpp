@@ -1,5 +1,12 @@
 #include "text.h"
 
+text::text(text &elemnetToCopy)
+{
+	for(int i = 0; i < elemnetToCopy.Count(); i++)	
+	{
+		AddLine(elemnetToCopy.GetLine(i));
+	}
+}
 
 text::text(void)
 {
@@ -53,6 +60,11 @@ void text::operator+= (text &lines)
 }
 
 void text::operator+= (const char line[])
+{
+	AddLine(line);
+}
+
+void text::AddLine(const char line[])
 {
 	RowsList *buf = m_rowsRoot;
 	if(buf == nullptr)

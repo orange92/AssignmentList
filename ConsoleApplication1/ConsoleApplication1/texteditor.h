@@ -12,6 +12,6 @@ public:
 	texteditor operator+ (texteditor &classObiect);
 	texteditor operator= (texteditor &classObiect);
 private:
-	text m_text;
+	text *m_text;
 };
 

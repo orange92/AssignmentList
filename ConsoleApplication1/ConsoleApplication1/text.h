@@ -24,6 +24,7 @@ public:
 	char *GetLine(int i);
 
 private:
+	void text::AddLine(const char line[]);
 	RowsList *m_rowsRoot;
 
 };
