@@ -11,7 +11,7 @@ public:
 	void operator+= (const char line[]);
 	void operator+= (texteditor &classObiect);
 	texteditor operator+ (texteditor &classObiect);
-	texteditor operator= (texteditor &classObiect);
+	void operator= (texteditor &classObiect);
 	text m_text;
 };
 

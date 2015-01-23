@@ -39,7 +39,7 @@ void text::operator>> (const char line[])
 void text::operator+= (text &lines)
 {
 	RowsList *buf;
-	for (int i = 0; i < lines.Count; i++)
+	for (int i = 0; i < lines.Count(); i++)
 	{
 		buf = m_rowsRoot;
 		if(buf == NULL)

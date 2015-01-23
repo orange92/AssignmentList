@@ -18,7 +18,7 @@ int texteditor::NumbersOfWhiteSpaces()
 {
 	int numbersOfWhiteSpaces = 0;
 	char *line;
-	for(int i = 0; i < m_text.Count; i++)
+	for(int i = 0; i < m_text.Count(); i++)
 	{
 		line = m_text.GetLine(i);
 		int n = 0;
@@ -45,4 +45,9 @@ texteditor texteditor::operator+ (texteditor &classObiect)
 	texteditor buf(m_text);
 	buf.m_text += classObiect.m_text;
 	return buf;
+}
+
+void texteditor::operator= (texteditor &classObiect)
+{
+	m_text = classObiect.m_text;
 }
