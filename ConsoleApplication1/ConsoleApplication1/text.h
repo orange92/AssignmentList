@@ -1,5 +1,6 @@
 #pragma once
 #include "row.h"
+#include <stdlib.h>
 class text
 {
 public:
@@ -13,6 +14,8 @@ public:
 	} RowsList;
 
 	void operator>> (const char line[]);
+
+	void operator+= (text &line);
 
 	void operator+= (const char line[]);
 private:

@@ -1,4 +1,6 @@
 #pragma once
+#include <stdlib.h>
+#include "text.h"
 class texteditor
 {
 public:
@@ -9,6 +11,7 @@ public:
 	void operator+= (texteditor &classObiect);
 	texteditor operator+ (texteditor &classObiect);
 	texteditor operator= (texteditor &classObiect);
-
+private:
+	text m_text;
 };
 
