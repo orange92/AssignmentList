@@ -7,7 +7,7 @@ public:
 	~row(void);
 	void Add(const char buf[]);
 	void Append(const char buf[]);
-	void Get();
+	char* Get();
 private:
 	char *m_line;
 };

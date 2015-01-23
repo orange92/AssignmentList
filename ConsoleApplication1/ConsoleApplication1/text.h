@@ -15,9 +15,14 @@ public:
 
 	void operator>> (const char line[]);
 
-	void operator+= (text &line);
+	void operator+= (text &lines);
 
 	void operator+= (const char line[]);
+
+	int Count();
+
+	char *GetLine(int i);
+
 private:
 	RowsList *m_rowsRoot;
 
