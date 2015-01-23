@@ -5,7 +5,7 @@ class text
 {
 public:
 	text(void);
-	text(text &elemnetToCopy);
+	text(text *elemnetToCopy);
 	~text(void);
 	typedef struct RowsList
 	{

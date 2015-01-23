@@ -5,6 +5,10 @@ texteditor::texteditor(void)
 {
 }
 
+texteditor::texteditor(text buf)
+{
+	m_text = buf;
+}
 
 texteditor::~texteditor(void)
 {
@@ -28,10 +32,17 @@ int texteditor::NumbersOfWhiteSpaces()
 
 void texteditor::operator+= (const char line[])
 {
-	m_text.AddLine(line);
+	m_text+=line;
 }
 
 void texteditor::operator+= (texteditor &classObiect)
 {
 	m_text+=classObiect.m_text;
+}
+
+texteditor texteditor::operator+ (texteditor &classObiect)
+{
+	texteditor buf(m_text);
+	buf.m_text += classObiect.m_text;
+	return buf;
 }

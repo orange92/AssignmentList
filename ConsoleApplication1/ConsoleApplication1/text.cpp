@@ -1,10 +1,10 @@
 #include "text.h"
 
-text::text(text &elemnetToCopy)
+text::text(text *elemnetToCopy)
 {
-	for(int i = 0; i < elemnetToCopy.Count(); i++)	
+	for(int i = 0; i < elemnetToCopy->Count(); i++)	
 	{
-		AddLine(elemnetToCopy.GetLine(i));
+		AddLine(elemnetToCopy->GetLine(i));
 	}
 }
 
