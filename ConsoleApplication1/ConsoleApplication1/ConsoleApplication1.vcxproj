@@ -78,6 +78,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="row.cpp" />
+    <ClCompile Include="text.cpp" />
+    <ClCompile Include="texteditor.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="row.h" />
+    <ClInclude Include="text.h" />
+    <ClInclude Include="texteditor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

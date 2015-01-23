@@ -22,9 +22,9 @@ public:
 	int Count();
 
 	char *GetLine(int i);
-
-private:
 	void text::AddLine(const char line[]);
+private:
+	
 	RowsList *m_rowsRoot;
 
 };
