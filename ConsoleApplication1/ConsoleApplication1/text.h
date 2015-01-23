@@ -12,10 +12,11 @@ public:
 		RowsList *next;
 	} RowsList;
 
-	void operator>> (const char[]);
+	void operator>> (const char line[]);
 
-	void operator+= (const char[]);
-
+	void operator+= (const char line[]);
+private:
+	RowsList *m_rowsRoot;
 
 };
 
